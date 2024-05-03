@@ -1,41 +1,25 @@
-# Project Title
+Read me
 
-Simple overview of use/purpose.
+Contract for MyToken
 
-## Description
+This is the smart contract for MyToken token (JMS). It permits the tracking of balances for various addresses in addition to the minting and burning of tokens.
 
-An in-depth paragraph about your project and overview of use.
+Public Variables
 
-## Getting Started
+name: A string variable that holds the token's name (JAMES). symbol: A string variable that holds the token's (JMS) symbol. totalSupply: The total supply of tokens is represented by this unsigned integer variable.
 
-### Installing
+Mapping a Variable
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+balances: An association between an address and its accompanying token balance.
 
-### Executing program
+Functions
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+The function mint(address _address, uint _value) is used to create new tokens. It adds the designated number of tokens to the balance of the specified address and raises the overall supply.
 
-## Help
+burn(address _address, uint _value): Burning (or destroying) tokens is done with this function. It deducts the designated number of tokens from the address balance, lowers the overall supply, and determines whether the given address has enough tokens to burn.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Please be aware that the MyToken contract and its features are briefly described in this readme file. It is advised to examine the actual code implementation for more specific details.
 
-## Authors
+Note:
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Make sure to review and test the code thoroughly before deploying it on a live network.
